@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Romolo Tacmoy</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Portfolio - Romolo Tacmoy</title>
 </head>
 <body>
     <div class="container">
         <header>
             <nav>
-                <h1>My Logo</h1>
+                <img src="./images/logo.png" alt="">
                 <ul>
                     <li><a href="#hero-banner">Home</a></li>
                     <li><a href="#about-me">About</a></li>
@@ -22,55 +22,59 @@
         <main>
             <section class="hero-banner" id="hero-banner">
                 <div class="hero-info">
-                    <h1>Add a heading</h1>
-                    <h4>Add a little bit of body text.</h4>
-                    <button>Learn More</button>
+                    <h1>Hello, I'm Romolo Tacmoy</h1>
+                    <h4>I'm a Front-End Developer passionate about crafting beautiful and user-friendly websites.</h4>
+                    <button>VIEW MY WORK</button>
                 </div>
-                <img src="./images/image-1.png" class="image-1">
+                <img src="./images/image-5.png" class="image-1">
             </section>
             <section class="about-me" id="about-me">
                 <h1>About me</h1>
                 <div class="content">
-                    <img src="./images/image-2.png" class="image-2">
+                    <img src="./images/image-5.png" class="image-2">
                     <div class="info">
-                        <h2>Personal Information</h2>
-                        <ul>
-                            <li>Add a little bit of body text</li>
-                            <li>Add a little bit of body text</li>
+                        <h2>PERSONAL INFORMATION</h2>
+                        <ul class="personal">
+                            <li>AGE: 31</li>  
+                            <li>FIRT NAME: ROMOLO</li>
+                            <li>LAST NAME: TACMOY</li>
+                            <li>MIDDLE NAME: ALMAZAN</li>
+                            <li>CIVIL STATUS: SINGLE</li>
+                            <li>NATIONALITY: FILIPINO</li>
+                            <li>ADDRESS: CABUYAO CITY, LAGUNA</li>
+                            <li>LANGUAGE: TAGALOG</li>
                         </ul>
                     </div>
                 </div>
             </section>
             <section class="experience">
                 <h1>Experience & Education</h1>
-                <div class="personal-info">
-                    <div class="info">
-                        <h2>Personal Information</h2>
-                        <ul>
-                            <li><span>Add a little bit of body text</span></li>
-                            <li><span>Add a little bit of body text</span></li>
-                        </ul>
+                <div class="personal-experience">
+                    <div class="work-experience">
+                        <div class="info">
+                            <h2><i class="fa-solid fa-briefcase"></i>SOFTWARE ENGINEER</h2>
+                            <ul class="personal">
+                                <li>NOVARE TECHNOLOGIES INCORPORATED</li>
+                                <li>(APRIL 2022 - OCTOBER 2023)</li>
+                            </ul>
+                        </div>
+                        <div class="info">
+                            <h2><i class="fa-solid fa-briefcase"></i>FRONT END DEVELOPER</h2>
+                            <ul class="personal">
+                                <li>GLEENT INCORPORATED</li>
+                                <li>(NOVEMBER 2019 - MARCH 2020)</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="info">
-                        <h2>Personal Information</h2>
-                        <ul>
-                            <li><span>Add a little bit of body text</span></li>
-                            <li><span>Add a little bit of body text</span></li>
-                        </ul>
-                    </div>
-                    <div class="info">
-                        <h2>Personal Information</h2>
-                        <ul>
-                            <li><span>Add a little bit of body text</span></li>
-                            <li><span>Add a little bit of body text</span></li>
-                        </ul>
-                    </div>
-                    <div class="info">
-                        <h2>Personal Information</h2>
-                        <ul>
-                            <li><span>Add a little bit of body text</span></li>
-                            <li><span>Add a little bit of body text</span></li>
-                        </ul>
+                    <div class="education">
+                        <div class="info">
+                            <h2><i class="fa-solid fa-user-graduate"></i>BACHELOR DEGREE - BSIT</h2>
+                            <ul class="personal">
+                                <li>YEAR 2010 - 2020</li>
+                                <li>SCHOOL: PAMANTASAN NG CABUYAO</li>
+                                <li>ADDRESS: BANAY-BANAY, CABUYAO CITY</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -89,26 +93,26 @@
             <h1>My Contact</h1>
             <div class="footer-info">
                 <div class="info">
-                    <h2>Personal Information</h2>
-                    <ul>
-                        <li><span>Add a little bit of body text</span></li>
-                        <li><span>Add a little bit of body text</span></li>
+                    <h3>Now that you know a lot about me feel free to message me. I am open to discuss a new projects and creative ideas or oppurtunity to be part of your project.</h3>
+                    <ul class="personal">
+                        <li><i class="fa-solid fa-envelope"></i>MAIL ME: romolotacmoyjr@gmail.com</li>
+                        <li><i class="fa-solid fa-phone"></i>CALL ME: 09238453554</li>
                     </ul>
-                    
                 </div>
                 <form>
                     <div class="name">
-                        <input type="text" id="first-name">
-                        <input type="text" id="last-name">
+                        <input type="text" id="first-name" placeholder="FIRST NAME">
+                        <input type="text" id="last-name" placeholder="LAST NAME">
                     </div>
-                    <input type="text" id="email-address">
-                    <textarea name="" id="message"></textarea>
-                    <button id="btn-contact">Learn More</button>
+                    <input type="text" id="email-address" placeholder="EMAIL ADDRESS">
+                    <textarea name="" id="message" placeholder="YOUR MESSAGE"></textarea>
+                    <button id="btn-contact">SEND MESSAGE</button>
                 </form>
             </div>
-            <p id="receive">Add a little bit of body text</p>
+            <p id="receive">&copy; 2024 RTWebCraft. All Rights Reserved.</p>
         </footer>
     </div>
     <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/ae57c5703b.js" crossorigin="anonymous"></script>
 </body>
 </html>

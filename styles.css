@@ -6,11 +6,11 @@
     font-family: "Roboto", sans-serif;
 }
 
-body {
-    width: 100%;
+.container {
+    height: 100vh;
     font-weight: 100;
     font-style: normal;
-    overflow-x: hidden;
+    overflow: auto;
 }
 
 header {
@@ -56,7 +56,12 @@ header ul li a {
     text-transform: uppercase;
 }
 
-.hero-banner, .about-me, .experience, .portfolio, .footer{
+main {
+    width: 100%;
+    height: auto;
+}
+
+.hero-banner, .about-me, .experience, .portfolio {
     width: 100%;
     padding: 50px 60px;
 }
@@ -68,6 +73,7 @@ header ul li a {
 }
 
 .hero-banner {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -77,13 +83,14 @@ header ul li a {
 }
 
 .image-1 {
-    width: 45%;
+    width: auto;
     height: 510px;
+    overflow: auto;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 55px;
 }
 
 .hero-info {
@@ -130,23 +137,33 @@ button {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 12px;
 }
 
 .image-2 {
-    height: 500px;
+    height: 450px;
+    overflow: auto;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    margin-top: 20px;
 }
 
 .info {
     display: flex;
     color: #FFFFFF;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     margin-top: 40px;
     gap: 12px;
+}
+
+.personal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 6px;
 }
 
 .info ul {
@@ -154,26 +171,40 @@ button {
 }
 
 .info ul li {
-    font-weight: 300;
+    font-weight: 400;
 } 
 
 .experience {
     color: #282726;
-    max-height: auto;
     background-color: #D6CAB0;
 }
 
-.experience .personal-info {
+.personal-experience {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
-    gap: 24px;
+    justify-content:space-around;
+    gap: 24px; 
+}
+
+.work-experience .personal, 
+.work-experience .info {
+    color: #282726;
+}
+
+.education .personal, 
+.education .info {
+    color: #282726;
 }
 
 .experience .info {
     margin-top: 20px;
-    text-align: center;
+}
+
+.info h2 {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
 }
 
 .portfolio {
@@ -190,24 +221,40 @@ button {
 }
 
 .project .project-image {
+    background-image: url(./images/not-applicable.jpg);
+    background-position: center;
     border: none;
     margin-top: 20px;
     padding: 120px 120px;
+    overflow: auto;
     background-color: #FFFFFF;
 }
 
 .footer {
+    width: 100%;
+    padding: 50px 60px 20px 60px;
     color: #FFFFFF;
     background-color: #282726;
 }
 
-.footer .footer-info {
+.footer-info {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-around;
-    gap: 24px;
     margin-top: 40px;
+    gap: 24px;
+}
+
+.footer-info .info {
+    width: 48%;
+    justify-content: normal;
+    gap: 60px;
+}
+
+.personal li {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
 }
 
 form {
@@ -232,11 +279,13 @@ input[type='text'], textarea {
     width: 100%;
     border: none;
     height: 45px;
+    padding: 0 10px;
     border-radius: 8px;
 } 
 
 #message {
     height: 100px;
+    padding: 10px;
 }
 
 #email-address, #message {
@@ -257,9 +306,13 @@ input[type='text'], textarea {
     nav {
         justify-content: space-around;
     }
-    .hero-banner .image-1, .hero-info, form {
-        width: 100%;  
+    .hero-info {
+        width: 100%;
         align-items: center;
+    }
+    .hero-banner .image-1, form, .footer-info .info {
+        width: 100%;  
+        align-items: flex-start;
     }
     .hero-info {
         text-align: center;
@@ -275,4 +328,3 @@ input[type='text'], textarea {
         margin-top: 0;
     }
 }
-
